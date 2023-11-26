@@ -2,7 +2,6 @@ package Data;
 
 import java.util.List;
 
-// — Создать класс УчебнаяГруппа, содержащий в себе поля Преподаватель и список Студентов;
 public class StudyGroup {
     private Teacher teacher;
     private List<Student> studentList;

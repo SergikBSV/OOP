@@ -31,8 +31,6 @@ public class Controler {
         service.create(firstName, secondName, lastName, dateB, Type.TEACHER);
     }
 
-    // — Создать метод в Контроллере, в котором агрегируются функции получения списка студентов (их id)
-// и преподавателя (его id) и формирования учебной группы, путём вызова метода из сервиса;
     public StudyGroup createStudyGroupWithIds(int teacherId, List<Integer> studentIds) {
         Teacher teacher = (Teacher) service.getUserById(Type.TEACHER, teacherId);
         List<Student> students = new ArrayList<>();
